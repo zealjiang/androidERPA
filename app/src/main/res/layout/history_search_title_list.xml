@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_status"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingRight="3dip">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="状态"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_medium_14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow_01_hdpi"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/common_gray_light"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/ll_car_licensePN"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingRight="3dip">
+
+        <TextView
+            android:id="@+id/tv_car_licensePN"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="车牌号"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_medium_14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_car_licensePN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow_01_hdpi"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/common_gray_light"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingRight="3dip">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="时间"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_medium_14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow_01_hdpi"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/common_gray_light"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/ll_shop"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingRight="3dip">
+
+        <TextView
+            android:id="@+id/tv_shop"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="门店"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_medium_14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow_01_hdpi"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/common_gray_light"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/ll_appraiser"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingRight="3dip">
+
+        <TextView
+            android:id="@+id/tv_appraiser"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="评估师"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_medium_14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_appraiser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow_01_hdpi"/>
+    </LinearLayout>
+</LinearLayout>

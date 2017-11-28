@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/common_gray_bg">
+
+    <include layout="@layout/comm_white_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup_gongkuang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rb_intact"
+                    style="@style/clickable_layout_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="工况完好" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dividerHeight"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@color/common_gray_line"/>
+
+                <RadioButton
+                    android:id="@+id/rb_poor"
+                    style="@style/clickable_layout_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="工况较差，但能正常启动行驶" />
+
+                <EditText
+                    android:id="@+id/et_poor"
+                    style="@style/clickable_layout_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="left"
+                    android:hint="输入内容"
+                    android:padding="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dividerHeight"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@color/common_gray_line"/>
+
+                <RadioButton
+                    android:id="@+id/rb_cannot_start"
+                    style="@style/clickable_layout_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="无法正常启动" />
+
+                <EditText
+                    android:id="@+id/et_cannot_start"
+                    style="@style/clickable_layout_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="left"
+                    android:hint="输入内容"
+                    android:padding="10dp" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

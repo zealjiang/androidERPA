@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.jzg.erp.appraiser.fragment.EvaluatePriceResultFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="品牌车型"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/text_medium_16sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvBrandModelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_font"
+                    android:textSize="@dimen/text_medium_16sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBrandModelStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvEvaluatePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_orange"
+                        android:textSize="@dimen/text_medium_14sp" />
+
+                    <TextView
+                        android:id="@+id/tvEvaluateDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/text_medium_14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:text="评估说明"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/text_medium_16sp" />
+
+        <TextView
+            android:id="@+id/tvEvaluateCcntent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/common_gray_dark"
+            android:textSize="@dimen/text_medium_16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:text="跟进销售顾问"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/text_medium_16sp" />
+
+        <TextView
+            android:id="@+id/tvSaleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/common_gray_dark"
+            android:textSize="@dimen/text_medium_16sp" />
+    </LinearLayout>
+
+</FrameLayout>

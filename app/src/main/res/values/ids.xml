@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<item name="provinceList" type="id"/>
+    <item name="cityList" type="id"/>
+    <item name="modifyCity" type="id"/>
+    <item name="close_dialog" type="id"/>
+    <item name="net_error" type="id"/>
+    <item name="net_error_back" type="id"/>
+    <item name="tools_xq_city_request" type="id"/>
+
+    <!-- Just adding these so I wont have to remove a lot of code from NumberPicker.java. -->
+    <item name="np__increment" type="id" />
+    <item name="np__decrement" type="id" />
+</resources>

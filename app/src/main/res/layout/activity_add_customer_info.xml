@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context="com.jzg.erp.appraiser.activity.AddCustomerInfoActivity">
+
+    <include layout="@layout/comm_white_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <TextView
+                android:id="@+id/tvpersonalCustomer"
+                style="@style/clickable_layout_with_right_arrow"
+                android:text="个人客户" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <TextView
+                android:id="@+id/tvCompanyCustomer"
+                style="@style/clickable_layout_with_right_arrow"
+                android:text="公司客户" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

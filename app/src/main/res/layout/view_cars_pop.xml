@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_license_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:text="车牌号"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_medium_16sp"
+            />
+
+        <EditText
+            android:id="@+id/et_license_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/commen_bg"
+            android:maxLength="9"
+            android:singleLine="true"
+            android:hint="车牌号"
+            android:padding="5dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_phone_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="手机号"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_medium_16sp"
+            />
+
+        <EditText
+            android:id="@+id/et_phone_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="70dp"
+            android:inputType="phone"
+            android:background="@drawable/commen_bg"
+            android:maxLength="14"
+            android:singleLine="true"
+            android:hint="手机号"
+            android:padding="5dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_vin_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="VIN"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_medium_16sp"
+         />
+
+        <EditText
+            android:id="@+id/et_vin_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/commen_bg"
+            android:maxLength="17"
+            android:singleLine="true"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+            android:inputType="textUri"
+            android:hint="VIN"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <com.jzg.erp.widget.CustomRippleButton
+        android:id="@+id/btnConfirm"
+        style="@style/style_common_blue_round_corner_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:padding="6dp"
+        android:text="@string/confirm" />
+</LinearLayout>

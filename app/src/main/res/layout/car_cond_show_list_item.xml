@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_click"
+    android:orientation="vertical"
+    android:padding="15dip">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_10"
+        android:textSize="@dimen/text_large_18sp"
+        android:text="外观损伤"
+        />
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="6dp"
+        android:textColor="@color/gray_9"
+        android:textSize="@dimen/text_medium_16sp"
+        android:text="左前门曾喷溱\n左前门曾喷溱"
+        />
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jzg.erp.appraiser.fragment.CustomerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlCompanyName"
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvCompanyNameLeft"
+                    style="@style/clickable_layout_key"
+                    android:text="公司名称" />
+
+                <TextView
+                    android:id="@+id/tvCompanyNameRight"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvCompanyNameLeft" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCustomerName"
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline">
+
+                <TextView
+                    android:id="@+id/tvCustomerNameLeft"
+                    style="@style/clickable_layout_key"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/tvCustomerNameRight"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvCustomerNameLeft" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPhone"
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline">
+
+                <TextView
+                    android:id="@+id/tvPhoneKey"
+                    style="@style/clickable_layout_key"
+                    android:text="联系电话" />
+
+                <TextView
+                    android:id="@+id/tvPhoneValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvPhoneKey" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDisplaceCar"
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline">
+
+                <TextView
+                    android:id="@+id/tvDisplaceCarKey"
+                    style="@style/clickable_layout_key"
+                    android:text="置换车型" />
+
+                <TextView
+                    android:id="@+id/tvDisplaceCarValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvDisplaceCarKey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline">
+
+                <TextView
+                    android:id="@+id/tvGenderKey"
+                    style="@style/clickable_layout_key"
+                    android:text="性别" />
+
+                <TextView
+                    android:id="@+id/tvGenderValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvGenderKey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline">
+
+                <TextView
+                    android:id="@+id/tvWantPriceKey"
+                    style="@style/clickable_layout_key"
+                    android:text="客户心理价" />
+
+                <TextView
+                    android:id="@+id/tvWantPriceValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvWantPriceKey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline">
+
+                <TextView
+                    android:id="@+id/tvWantLevelKey"
+                    style="@style/clickable_layout_key"
+                    android:text="客户意向等级" />
+
+                <TextView
+                    android:id="@+id/tvWantLevelValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvWantLevelKey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline">
+
+                <TextView
+                    android:id="@+id/tvCarHostSourceKey"
+                    style="@style/clickable_layout_key"
+                    android:text="车主来源" />
+
+                <TextView
+                    android:id="@+id/tvCarHostSourceValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvCarHostSourceKey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline">
+
+                <TextView
+                    android:id="@+id/tvCustomerAddressKey"
+                    style="@style/clickable_layout_key"
+                    android:text="通讯地址" />
+
+                <TextView
+                    android:id="@+id/tvCustomerAddressValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvCustomerAddressKey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/clickable_layout_container"
+                android:background="@drawable/bg_topline">
+
+                <TextView
+                    android:id="@+id/tvPreSellDateKey"
+                    style="@style/clickable_layout_key"
+                    android:text="预售日期" />
+
+                <TextView
+                    android:id="@+id/tvPreSellDateValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toRightOf="@+id/tvPreSellDateKey" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

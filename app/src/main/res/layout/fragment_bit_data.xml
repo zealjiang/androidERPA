@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".appraiser.fragment.CurrEvaluateFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_gray_bg"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_bigdata_chart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:text="近45天同车系价格"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/text_large_20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_height_value"
+                    android:layout_weight="1"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    app:layout_collapseMode="pin"
+                    app:tabBackground="@android:color/white"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/common_blue_normal"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/common_blue_normal"
+                    app:tabTextColor="@color/common_gray_dark" />
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_weight="2"
+                  android:layout_height="@dimen/widget_height_value">
+                  <TextView
+                      android:id="@+id/tvCurrCity"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:text="北京"
+                      android:drawableRight="@mipmap/jiantou003"
+                      android:drawablePadding="4dp"
+                      android:textColor="@color/common_blue_normal" />
+              </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_line" />
+            />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_collapseMode="pin" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="chekuang_waiguan_01">
+        <item>左前门</item>
+        <item>左后门</item>
+        <item>左前翼子板</item>
+        <item>左后翼子板</item>
+        <item>右前门</item>
+        <item>右后门</item>
+        <item>右前翼子板</item>
+        <item>右后翼子板</item>
+        <item>前保险杠</item>
+        <item>后保险杠</item>
+        <item>发动机盖</item>
+        <item>后备箱盖</item>
+        <item>车厢顶棚</item>
+        <item>左前轮</item>
+        <item>左后轮</item>
+        <item>右前轮</item>
+        <item>右后轮</item>
+    </string-array>
+    <string-array name="chekuang_waiguan_01_01_13">
+        <item>曾喷漆</item>
+        <item>曾钣金</item>
+        <item>曾更换</item>
+        <item>需喷漆</item>
+        <item>需钣金</item>
+    </string-array>
+    <string-array name="chekuang_waiguan_01_14">
+        <item>左前轮有轻微划痕</item>
+        <item>左前轮有生锈或严重划痕</item>
+        <item>左前轮有过变形，并修复</item>
+    </string-array>
+    <string-array name="chekuang_waiguan_01_15">
+        <item>左后轮有轻微划痕</item>
+        <item>左后轮有生锈或严重划痕</item>
+        <item>左后轮有过变形，并修复</item>
+    </string-array>
+    <string-array name="chekuang_waiguan_01_16">
+        <item>右前轮有轻微划痕</item>
+        <item>右前轮有生锈或严重划痕</item>
+        <item>右前轮有过变形，并修复</item>
+    </string-array>
+    <string-array name="chekuang_waiguan_01_17">
+        <item>右后轮有轻微划痕</item>
+        <item>右后轮有生锈或严重划痕</item>
+        <item>右后轮有过变形，并修复</item>
+    </string-array>
+    <string-array name="chekuang_lingbujian_03">
+        <item>发动机</item>
+        <item>变速箱</item>
+    </string-array>
+    <string-array name="chekuang_lingbujian_03_01">
+        <item>微小问题，完全不影响使用</item>
+        <item>进行过轻微的维修</item>
+        <item>拆开大修过</item>
+        <item>更换过</item>
+    </string-array>
+    <string-array name="gujia_waiguan_05">
+        <item>前机盖</item>
+        <item>前横梁</item>
+        <item>左前纵梁</item>
+        <item>右前纵梁</item>
+        <item>水箱框架</item>
+        <item>左前翼子板内衬</item>
+        <item>右前翼子板内衬</item>
+        <item>左前减震器上座</item>
+        <item>右前减震器上座</item>
+        <item>防火墙</item>
+        <item>左侧A柱</item>
+        <item>左侧B柱</item>
+        <item>左侧C柱</item>
+        <item>右侧A柱</item>
+        <item>右侧B柱</item>
+        <item>右侧C柱</item>
+        <item>后围板</item>
+        <item>后底板</item>
+        <item>左后纵深</item>
+        <item>右后纵深</item>
+        <item>后横梁</item>
+    </string-array>
+    <string-array name="chekuang_neishi_02">
+        <item>内饰完好</item>
+        <item>内饰较脏，无明显损伤</item>
+        <item>内饰肮脏，有明显破损、拆卸</item>
+    </string-array>
+    <string-array name="chekuang_gongkuang_04">
+        <item>工况完好</item>
+        <item>工况较差，但能正常启动行驶</item>
+        <item>无法组成启动</item>
+    </string-array>
+
+    <!--配置信息-->
+    <!--通用 -->
+    <string-array name="config_common">
+        <item>有</item>
+        <item>无</item>
+    </string-array>
+
+    <!--加装-->
+    <string-array name="config_add">
+        <item>有</item>
+        <item>无</item>
+        <item>加装</item>
+    </string-array>
+
+    <!--新车质保-->
+    <string-array name="QA_NEW_CAR">
+        <item>保内</item>
+        <item>保外</item>
+    </string-array>
+
+    <!--购置税-->
+    <string-array name="purchase_tax">
+        <item>已征收</item>
+        <item>未征收</item>
+        <item>无</item>
+    </string-array>
+</resources>

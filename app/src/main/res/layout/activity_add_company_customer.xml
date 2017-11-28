@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context="com.jzg.erp.appraiser.activity.AddPersonalCustomerActivity">
+
+    <include layout="@layout/comm_white_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <RelativeLayout
+                android:id="@+id/rlCompanyName"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvCompanyNameLeft"
+                    style="@style/clickable_layout_key"
+                    android:text="公司名称*" />
+
+                <TextView
+                    android:id="@+id/tvCompanyNameRight"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow1"
+                    android:layout_toRightOf="@+id/tvCompanyNameLeft" />
+
+                <ImageView
+                    android:id="@+id/ivArrow1"
+                    style="@style/clickable_layout_arrow" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <RelativeLayout
+                android:id="@+id/rlPhone"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvPhoneKey"
+                    style="@style/clickable_layout_key"
+                    android:text="联系电话*" />
+
+                <TextView
+                    android:id="@+id/tvPhoneValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow2"
+                    android:layout_toRightOf="@+id/tvPhoneKey" />
+
+                <ImageView
+                    android:id="@+id/ivArrow2"
+                    style="@style/clickable_layout_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+            <RelativeLayout
+                android:id="@+id/rlContactName"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvContactNameKey"
+                    style="@style/clickable_layout_key"
+                    android:text="联系人*" />
+
+                <TextView
+                    android:id="@+id/tvContactNameValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow3"
+                    android:layout_toRightOf="@+id/tvContactNameKey" />
+
+                <ImageView
+                    android:id="@+id/ivArrow3"
+                    style="@style/clickable_layout_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <RelativeLayout
+                android:id="@+id/rlGender"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvGenderKey"
+                    style="@style/clickable_layout_key"
+                    android:text="性别" />
+
+                <TextView
+                    android:id="@+id/tvGenderValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow4"
+                    android:layout_toRightOf="@+id/tvGenderKey" />
+
+                <ImageView
+                    android:id="@+id/ivArrow4"
+                    style="@style/clickable_layout_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <RelativeLayout
+                android:id="@+id/rlWantPrice"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvWantPriceKey"
+                    style="@style/clickable_layout_key"
+                    android:text="客户心理价" />
+
+                <TextView
+                    android:id="@+id/tvWantPriceValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow5"
+                    android:layout_toRightOf="@+id/tvWantPriceKey" />
+
+                <ImageView
+                    android:id="@+id/ivArrow5"
+                    style="@style/clickable_layout_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <RelativeLayout
+                android:id="@+id/rlWantLevel"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvWantLevelKey"
+                    style="@style/clickable_layout_key"
+                    android:text="客户意向等级" />
+
+                <TextView
+                    android:id="@+id/tvWantLevelValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow6"
+                    android:layout_toRightOf="@+id/tvWantLevelKey" />
+
+                <ImageView
+                    android:id="@+id/ivArrow6"
+                    style="@style/clickable_layout_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <RelativeLayout
+                android:id="@+id/rlCarHostSource"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvCarHostSourceKey"
+                    style="@style/clickable_layout_key"
+                    android:text="车主来源" />
+
+                <TextView
+                    android:id="@+id/tvCarHostSourceValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow7"
+                    android:layout_toRightOf="@+id/tvCarHostSourceKey" />
+
+                <ImageView
+                    android:id="@+id/ivArrow7"
+                    style="@style/clickable_layout_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <RelativeLayout
+                android:id="@+id/rlProvinceCity"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvProvinceCityKey"
+                    style="@style/clickable_layout_key"
+                    android:text="省市" />
+
+                <TextView
+                    android:id="@+id/tvProvinceCityValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow888"
+                    android:layout_toRightOf="@+id/tvProvinceCityKey" />
+
+                <ImageView
+                    android:id="@+id/ivArrow888"
+                    style="@style/clickable_layout_arrow" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <RelativeLayout
+                android:id="@+id/rlCustomerAddress"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvCustomerAddressKey"
+                    style="@style/clickable_layout_key"
+                    android:text="详细地址" />
+
+                <TextView
+                    android:id="@+id/tvCustomerAddressValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow8"
+                    android:layout_toRightOf="@+id/tvCustomerAddressKey" />
+
+                <ImageView
+                    android:id="@+id/ivArrow8"
+                    style="@style/clickable_layout_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+
+            <RelativeLayout
+                android:id="@+id/rlPreSellDate"
+                style="@style/clickable_layout_container">
+
+                <TextView
+                    android:id="@+id/tvPreSellDateKey"
+                    style="@style/clickable_layout_key"
+                    android:text="预售日期" />
+
+                <TextView
+                    android:id="@+id/tvPreSellDateValue"
+                    style="@style/clickable_layout_value"
+                    android:layout_toLeftOf="@+id/ivArrow9"
+                    android:layout_toRightOf="@+id/tvPreSellDateKey" />
+
+                <ImageView
+                    android:id="@+id/ivArrow9"
+                    style="@style/clickable_layout_arrow" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray_light" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

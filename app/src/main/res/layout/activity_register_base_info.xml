@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/common_gray_bg">
+
+    <include layout="@layout/comm_white_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@mipmap/input_bg"
+            android:layout_margin="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/et_vin"
+                style="@style/clickable_layout_key"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:hint="点击输入车架号"
+                android:paddingLeft="8dp"
+                />
+            <TextView
+                android:id="@+id/tv_vin_length"
+                style="@style/clickable_layout_key"
+                android:text="0/17"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:tabBackground="@color/common_gray_bg"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/common_blue_normal"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/common_gray_light"
+        app:tabSelectedTextColor="@color/common_blue_normal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        />
+
+</LinearLayout>
